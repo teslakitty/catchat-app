@@ -1,0 +1,16 @@
+{
+  "name": "mighty-muscle-modify-tgc0b",
+  "productName": "mighty-muscle-modify-tgc0b",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "vkuyt",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "31.3.0"
+  }
+}

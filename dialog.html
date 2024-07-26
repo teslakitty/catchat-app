@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Chat Option</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      #dialog {
+        background: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #dialog button {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dialog">
+      <p>Choose between the video chat and chat:</p>
+      <button id="videochat">Video Chat</button>
+      <button id="chat">Chat</button>
+    </div>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const { ipcRenderer } = window.electron;
+
+        document.getElementById('videochat').addEventListener('click', () => {
+          ipcRenderer.send('navigate', 'https://catchat-meow.netlify.app/videochat');
+        });
+
+        document.getElementById('chat').addEventListener('click', () => {
+          ipcRenderer.send('navigate', 'https://catchat-meow.netlify.app');
+        });
+      });
+    </script>
+  </body>
+</html>
