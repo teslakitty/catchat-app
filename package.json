@@ -1,11 +1,11 @@
 {
-  "name": "catchat-app",
+  "name": "catchat",
   "productName": "catchat-app",
-  "description": "My Electron application description",
+  "description": "catchat app for desktop",
   "keywords": [],
   "main": "./main.js",
   "version": "1.0.0",
-  "author": "vkuyt",
+  "author": "teslakitty1",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
