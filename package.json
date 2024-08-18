@@ -13,14 +13,16 @@
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "electron-builder": "^24.13.3"
+  },
   "devDependencies": {
-    "electron": "31.3.0",
     "@electron-forge/cli": "7.3.1",
     "@electron-forge/maker-deb": "7.3.1",
     "@electron-forge/maker-rpm": "7.3.1",
     "@electron-forge/maker-squirrel": "7.3.1",
-    "@electron-forge/maker-zip": "7.3.1"
+    "@electron-forge/maker-zip": "7.3.1",
+    "electron": "31.3.0"
   },
   "config": {
     "forge": {
